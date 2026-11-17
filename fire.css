@@ -80,3 +80,72 @@ nav a:hover {
     color: #254d83;
     margin-bottom: 10px;
 }
+
+
+/* Responsive design for tablets and mobile phones */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .skills-container,
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 80%;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+}
+
+/* Smaller mobile screens */
+
+@media screen and (max-width: 480px) {
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+}
