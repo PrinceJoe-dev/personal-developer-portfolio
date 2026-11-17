@@ -1,26 +1,5 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f6fb;
-    color: #222;
-    line-height: 1.6;
-}
-
-header {
-    background: #101b35;
-    padding: 20px 8%;
-}
-
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -29,7 +8,7 @@ nav {
 }
 
 .logo {
-    color: #fff;
+    color: white;
 }
 
 nav ul {
@@ -47,45 +26,31 @@ nav a:hover {
     color: #62b5ff;
 }
 
+/* Hero section */
 .hero {
-    min-height: 400px;
     background: linear-gradient(135deg, #101b35, #254d83);
     color: white;
-    display: flex;
-    align-items: center;
-    padding: 60px 8%;
+    padding: 80px 20px;
 }
 
 .hero h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
+    color: white;
+    font-size: 36px;
 }
 
-.hero p {
-    max-width: 600px;
-    margin: 15px 0 25px;
-}
-
+/* Buttons */
 .btn {
     display: inline-block;
     background: #62b5ff;
     color: #101b35;
     padding: 12px 22px;
+    margin-top: 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
 }
 
-section:not(.hero) {
-    padding: 60px 8%;
-    text-align: center;
-}
-
-section h2 {
-    color: #18345d;
-    margin-bottom: 20px;
-}
-
+/* Skills */
 .skills-container,
 .project-container {
     display: flex;
@@ -102,6 +67,7 @@ section h2 {
     border-radius: 6px;
 }
 
+/* Projects */
 .project {
     background: white;
     padding: 25px;
@@ -113,36 +79,4 @@ section h2 {
 .project h3 {
     color: #254d83;
     margin-bottom: 10px;
-}
-
-#contact {
-    background: #e8eef7;
-}
-
-footer {
-    background: #101b35;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .project {
-        width: 100%;
-    }
 }
